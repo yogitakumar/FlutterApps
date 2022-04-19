@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
@@ -109,7 +111,20 @@ class _LoginFormValidationState extends State<LoginFormValidation> {
               SizedBox(
                 height: 100,
               ),
-              Text('New User? Create Account')
+              Link(
+uri:Uri.parse(uri)
+                  builder:(context,followlink(){
+                    return GestureDetector(
+                    onTap: (){
+
+              Navigator.push(context,
+              MaterialPageRoute(builder: (_) => HomePage()));
+
+              },
+              child: Text('New User? Create Account'));
+              })),
+
+              )
             ],
           ),
         ),
