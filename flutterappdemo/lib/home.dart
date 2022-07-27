@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
-void main() {}
 void modify() {}
 
 class AnotherController extends GetxController {
