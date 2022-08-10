@@ -2,7 +2,7 @@ import 'package:desktopappdemo/homepage.dart';
 import 'package:flutter/material.dart';
 
 
-const Color myColor = Colors.brown;
+const Color myColor = Colors.purple;
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: "Cocktail App",
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        fontFamily: "Pacifico",
+        //fontFamily: "Pacifico",
       ),
       home: HomePage(),
     );
