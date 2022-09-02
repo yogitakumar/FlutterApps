@@ -7,7 +7,7 @@ class StepperDemo extends StatefulWidget {
 
 class _StepperDemoState extends State<StepperDemo> {
   int _currentStep = 0;
-  StepperType stepperType = StepperType.vertical;
+  StepperType stepperType = StepperType.horizontal;
 
 
   @override
@@ -31,7 +31,7 @@ class _StepperDemoState extends State<StepperDemo> {
                 onStepCancel: cancel,
                 steps: <Step>[
                   Step(
-                    title: new Text('Account'),
+                    title: new Text(''),
                     content: Column(
                       children: <Widget>[
                         TextFormField(
@@ -47,7 +47,7 @@ class _StepperDemoState extends State<StepperDemo> {
                     StepState.complete : StepState.disabled,
                   ),
                   Step(
-                    title: new Text('Address'),
+                    title: new Text(''),
                     content: Column(
                       children: <Widget>[
                         TextFormField(
@@ -63,7 +63,7 @@ class _StepperDemoState extends State<StepperDemo> {
                     StepState.complete : StepState.disabled,
                   ),
                   Step(
-                    title: new Text('Mobile Number'),
+                    title: new Text(''),
                     content: Column(
                       children: <Widget>[
                         TextFormField(
